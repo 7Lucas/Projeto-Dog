@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DogsService } from '../dogs.service';
+import { imgDog } from '../imgDog';
 
 @Component({
   selector: 'app-dog',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogComponent implements OnInit {
 
-  constructor() { }
+  constructor(private getservice: DogsService ) { }
+
+  dg?: imgDog
 
   ngOnInit(): void {
+    this.View();
   }
 
+  View(){
+    this.getservice.msDogs().subscribe(dog => this.dg = dog)
+  }
 }
