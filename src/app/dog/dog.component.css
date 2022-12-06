@@ -1,0 +1,44 @@
+button{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:  120%;
+    color: #fff;
+    font-weight: bolder;
+    height: 80px;
+    width: 400px;
+    background-color: rgb(255, 4, 255);
+    border-radius: 10px 20px 30px;
+    border-color: #fff;
+}
+
+button:hover{
+    background-color: rgb(255, 4, 155);
+    color: #fff;
+}
+
+p{
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+    font-weight: bolder;
+    font-size:  120%;
+}
+
+.container{
+    color: #fff;
+    text-align: center;
+}
+
+.tv{
+    position: absolute;
+    width: 640px;
+    top: 25%;
+    left: 33%;
+}
+
+.img{
+    position: absolute;
+    width: 530px;
+    height: 350px;
+    top: 52%;
+    left: 36%;
+}
+
